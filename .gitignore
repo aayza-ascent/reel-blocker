@@ -1,0 +1,33 @@
+# Node
+node_modules/
+npm-debug.log
+package-lock.json
+*.log
+
+# Android
+*.apk
+*.ap_
+*.aab
+*.dex
+*.class
+.gradle/
+build/
+local.properties
+*.iml
+.idea/
+captures/
+*.jks
+*.keystore
+
+# TypeScript
+dist/
+*.tsbuildinfo
+
+# macOS
+.DS_Store
+
+# iOS (for future)
+*.xcuserstate
+*.xcworkspace
+Pods/
+DerivedData/

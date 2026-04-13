@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "instagramVersion": "latest",
+  "publishedAt": "2026-04-13T00:00:00Z",
+  "android": {
+    "tabBarReelIds": ["clips_tab", "reels_tab", "navigation_reels"],
+    "reelContainerIds": ["clips_viewer_fragment_root", "reel_viewer_root"],
+    "reelContentDescriptions": ["reel", "clip"],
+    "structuralSignatures": [
+      {
+        "parentClass": "FrameLayout",
+        "childPattern": ["VideoView", "ImageView"],
+        "minChildCount": 2,
+        "aspectRatioMin": 1.7
+      }
+    ]
+  },
+  "ios": {
+    "cssSelectors": [
+      "a[href*='/reels/']",
+      "[data-bloks-name*='reels']",
+      "article:has(video[autoplay]):has([aria-label*='Reel'])",
+      "div[class*='Reels']"
+    ],
+    "urlBlockPatterns": [
+      "instagram\\.com/api/v1/clips/",
+      "instagram\\.com/reels/"
+    ]
+  }
+}
